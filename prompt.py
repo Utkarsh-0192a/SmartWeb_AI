@@ -34,3 +34,15 @@ answer_gen = """
         output format:
         [answer]
         """
+
+check_knowledge = """
+    You must follow these rules strictly:
+
+    1. If the user message is a question and you have verifiable knowledge, answer concisely.
+    2. If the question requires real-time data, external sources, predictions, or is beyond your knowledge, respond with only "false". Do not provide any explanation or additional text.
+    3. If the user message is not a question, respond normally.
+
+    Respond strictly according to these rules.
+
+    User message: Who discovered gravity?
+"""
