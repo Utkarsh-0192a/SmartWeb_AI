@@ -1,4 +1,4 @@
-from googlesearch import search
+from searching import search
 import trafilatura
 import ollama
 from config import logger  # Use shared logger
@@ -49,7 +49,7 @@ class websearch:
     def get_result(self):
         logger.info(f"Getting search results for question: {self.question}")
         try:
-            p = search(self.question, sleep_interval=5, num_results=5, advanced=True)
+            p = search(self.question, sleep_interval=5, num_results=5, advanced=True,timeframe="1 year")
             data = []
             for i in p:
                 tmp = {

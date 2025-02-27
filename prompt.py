@@ -44,5 +44,5 @@ check_knowledge = """
 
     Respond strictly according to these rules.
 
-    User message: Who discovered gravity?
+    User message: {}
 """
